@@ -3,7 +3,7 @@
 import os
 import tempfile
 import pytest
-from requests_mock import Mocker()
+import requests_mock
 
 from page_loader import loader
 
@@ -11,7 +11,7 @@ RESOURCE_URL = 'https://test.test/user/test/main-page/'
 
 
 def test_save_url(simple_page_content):
-    with Mocker() as mock:
+    with requests_mock.Mocker() as mock:
         mock.get(RESOURCE_URL, text=simple_page_content)
 
         with tempfile.TemporaryDirectory() as tmpdirname:
@@ -36,7 +36,7 @@ def test_save_url_with_fetch_exception():
 
 
 def test_save_url_with_tmpdir_err(simple_page_content):
-    with Mocker() as mock:
+    with requests_mock.Mocker() as mock:
         mock.get(RESOURCE_URL, text=simple_page_content)
         with tempfile.TemporaryDirectory() as tmpdirname:
             with pytest.raises(loader.LoaderError):
