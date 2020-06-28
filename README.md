@@ -13,6 +13,8 @@
 
 ### 2. Example of usage
 
+``` pageloader [-o OUTPUT_DIR] [-l {DEBUG,INFO,WARNING,ERROR}] URL```
+
 ```page-loader http://yandex.ru```
 [![asciicast](https://asciinema.org/a/43HcWrKvAzLeKULwjlVCeou50.svg)](https://asciinema.org/a/43HcWrKvAzLeKULwjlVCeou50)
 
