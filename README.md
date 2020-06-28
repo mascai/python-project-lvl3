@@ -5,3 +5,7 @@
 
 
 [![Build Status](https://travis-ci.org/mascai/python-project-lvl3.svg?branch=master)](https://travis-ci.org/mascai/python-project-lvl3)
+
+### 1. Installation
+pip install --user --extra-index-url https://test.pypi.org/simple/ mascai-page-loader
+
