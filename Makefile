@@ -8,4 +8,4 @@ test:
 	poetry run pytest
 
 test-cov:
-	poetry run pytest --cov=page-loader tests  --cov-report xml
+	poetry run pytest -vv --cov=page_loader --cov-report xml tests/
