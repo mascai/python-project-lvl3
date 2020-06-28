@@ -15,3 +15,6 @@
 
 ```page-loader http://yandex.ru```
 [![asciicast](https://asciinema.org/a/43HcWrKvAzLeKULwjlVCeou50.svg)](https://asciinema.org/a/43HcWrKvAzLeKULwjlVCeou50)
+
+```page-loader http://yande.ru --output=res_dir ```
+[![asciicast](https://asciinema.org/a/8GsHOYxVbFrQOSh6oqeb7q1ww.svg)](https://asciinema.org/a/8GsHOYxVbFrQOSh6oqeb7q1ww)
